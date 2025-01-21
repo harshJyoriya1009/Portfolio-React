@@ -14,6 +14,42 @@
      gap:65px;
      font-size:20px;
 }
+
+.hover p{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.hover p::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgba(119, 62, 62, 0.852);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.hover p:hover::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: rgba(119, 62, 62, 0.852);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+
+}
 .nav-connect{
     padding: 20px 40px;
     border-radius: 55px;
@@ -24,4 +60,9 @@
 }
 .nav-connect:hover{
     transform: scale(1.05);
+}
+
+.anchor-link{
+    text-decoration: none;
+    color: white;
 }
