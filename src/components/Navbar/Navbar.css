@@ -66,3 +66,130 @@
     text-decoration: none;
     color: white;
 }
+#nav-close-bar{
+    display: none;
+}
+#nav-open-bar{
+    display: none;
+}
+
+/* Responsive----------------------------------------- */
+
+/* @media(max-width:216px){
+    .navbar{
+        margin:20px 50px;
+    }
+    .nav-connect{
+        display: none;
+    }
+    #nav-open-bar{
+        display: block;
+        position: fixed;
+        right: 30px;
+    }
+    #nav-close-bar{
+        display: block;
+        position: relative;
+        top:30px;
+        left:290px;
+        width: 30px;
+    }
+    .nav-menu{
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap:30px;
+        background-color: rgba(119, 62, 62, 0.852);
+        width:350px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -350px;
+    }
+    .nav-menu li{
+        font-size: 30px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap:20px;
+    }
+} */
+
+@media (max-width: 768px) {
+    .navbar {
+        margin: 20px 50px;
+    }
+
+    /* Hide the "Connect with me" button in mobile */
+    .nav-connect {
+        display: none;
+    }
+
+    /* Show the open menu (hamburger) icon */
+    #nav-open-bar {
+        display: block;
+        position: fixed;
+        top: 30px;
+        right: 45px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    /* Show the close menu (x) icon when the menu is open */
+    #nav-close-bar {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 45px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    /* Hide the nav menu by default */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -350px;
+        width: 350px;
+        height: 100%;
+        background-color: rgba(119, 62, 62, 0.852);
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+        padding-top: 50px;
+        transition: right 0.5s;
+        z-index: 2;
+    }
+
+    /* Style the nav items for mobile */
+    .nav-menu li {
+        font-size: 25px;
+        padding-left: 50px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .nav-menu li:hover p::after {
+        width: 100%;
+    }
+
+    /* When the menu is opened, move it to the right */
+    .nav-menu.open {
+        right: 300;
+    }
+}
+
+/* Optional: For even smaller devices */
+@media (max-width: 480px) {
+    .nav-menu li {
+        font-size: 22px;
+    }
+
+    .port-logo {
+        font-size: 20px;
+    }
+
+    .nav-connect {
+        font-size: 18px;
+    }
+}

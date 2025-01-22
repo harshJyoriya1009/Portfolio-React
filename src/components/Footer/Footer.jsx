@@ -12,11 +12,11 @@ const Footer = () => {
                 <p>I am a Frontend Developer</p>
             </div>
             <div className="footer-top-right">
-                <div className="footer-email-input">
-                <i className="fa-solid fa-user"></i>
-                    <input type="email" placeholder='Enter your Email' name="email" />
-                </div>
-                <div className="footer-enter">Enter</div>
+                {/* <div className="footer-email-input"> */}
+                {/* <i className="fa-solid fa-user"></i> */}
+                    {/* <input type="email" placeholder='Enter your Email' name="email" /> */}
+                {/* </div> */}
+                {/* <div className="footer-enter">Enter</div> */}
             </div>
         </div>
         <hr />
