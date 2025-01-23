@@ -1,195 +1,154 @@
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px 170px;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 170px;
 }
-.port-logo{
-    font-size: 25px;
+.port-logo {
+  font-size: 25px;
 }
-.nav-menu{
-     display: flex;
-     align-items: center;
-     list-style: none;
-     gap:65px;
-     font-size:20px;
-}
-
-.hover p{
-    display: flex;
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    position: relative;
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 65px;
+  font-size: 20px;
 }
 
-.hover p::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: rgba(119, 62, 62, 0.852);
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    transition: 0.5s;
+.hover p {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  position: relative;
 }
 
-.hover p:hover::after{
-    content: '';
-    width: 100%;
-    height: 3px;
-    background: rgba(119, 62, 62, 0.852);
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-
-}
-.nav-connect{
-    padding: 20px 40px;
-    border-radius: 55px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(119, 62, 62, 0.852));
-    font-size: 21px;
-    cursor: pointer;
-    transition: 0.6s;
-}
-.nav-connect:hover{
-    transform: scale(1.05);
+.hover p::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: rgba(119, 62, 62, 0.852);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
-.anchor-link{
-    text-decoration: none;
-    color: white;
+.hover p:hover::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: rgba(119, 62, 62, 0.852);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
-#nav-close-bar{
-    display: none;
+.nav-connect {
+  padding: 20px 40px;
+  border-radius: 55px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(119, 62, 62, 0.852));
+  font-size: 21px;
+  cursor: pointer;
+  transition: 0.6s;
 }
-#nav-open-bar{
-    display: none;
+.nav-connect:hover {
+  transform: scale(1.05);
+}
+
+.anchor-link {
+  text-decoration: none;
+  color: white;
+}
+#nav-close-bar {
+  display: none;
+}
+#nav-open-bar {
+  display: none;
 }
 
 /* Responsive----------------------------------------- */
 
-/* @media(max-width:216px){
-    .navbar{
-        margin:20px 50px;
-    }
-    .nav-connect{
-        display: none;
-    }
-    #nav-open-bar{
-        display: block;
-        position: fixed;
-        right: 30px;
-    }
-    #nav-close-bar{
-        display: block;
-        position: relative;
-        top:30px;
-        left:290px;
-        width: 30px;
-    }
-    .nav-menu{
-        position: fixed;
-        flex-direction: column;
-        align-items: start;
-        top: 0;
-        gap:30px;
-        background-color: rgba(119, 62, 62, 0.852);
-        width:350px;
-        height: 100%;
-        z-index: 2;
-        transition: right 0.5s;
-        right: -350px;
-    }
-    .nav-menu li{
-        font-size: 30px;
-        padding-left: 100px;
-        flex-direction: row;
-        gap:20px;
-    }
-} */
-
 @media (max-width: 768px) {
-    .navbar {
-        margin: 20px 50px;
-    }
+  .navbar {
+    margin: 20px 50px;
+  }
 
-    /* Hide the "Connect with me" button in mobile */
-    .nav-connect {
-        display: none;
-    }
+  /* Hide the "Connect with me" button in mobile */
+  .nav-connect {
+    display: none;
+  }
 
-    /* Show the open menu (hamburger) icon */
-    #nav-open-bar {
-        display: block;
-        position: fixed;
-        top: 30px;
-        right: 45px;
-        font-size: 30px;
-        cursor: pointer;
-    }
+  /* Show the open menu (hamburger) icon */
+  #nav-open-bar {
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 45px;
+    font-size: 30px;
+    cursor: pointer;
+  }
 
-    /* Show the close menu (x) icon when the menu is open */
-    #nav-close-bar {
-        display: block;
-        position: absolute;
-        top: 30px;
-        right: 45px;
-        font-size: 30px;
-        cursor: pointer;
-    }
+  /* Show the close menu (x) icon when the menu is open */
+  #nav-close-bar {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 45px;
+    font-size: 30px;
+    cursor: pointer;
+  }
 
-    /* Hide the nav menu by default */
-    .nav-menu {
-        position: fixed;
-        top: 0;
-        right: -350px;
-        width: 350px;
-        height: 100%;
-        background-color: rgba(119, 62, 62, 0.852);
-        flex-direction: column;
-        align-items: start;
-        gap: 30px;
-        padding-top: 50px;
-        transition: right 0.5s;
-        z-index: 2;
-    }
+  /* Hide the nav menu by default */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100%;
+    background-color: rgba(119, 62, 62, 0.852);
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    padding-top: 50px;
+    transition: right 0.5s;
+    z-index: 2;
+  }
 
-    /* Style the nav items for mobile */
-    .nav-menu li {
-        font-size: 25px;
-        padding-left: 50px;
-        cursor: pointer;
-        width: 100%;
-    }
+  /* Style the nav items for mobile */
+  .nav-menu li {
+    font-size: 25px;
+    padding-left: 50px;
+    cursor: pointer;
+    width: 100%;
+  }
 
-    .nav-menu li:hover p::after {
-        width: 100%;
-    }
+  .nav-menu li:hover p::after {
+    width: 100%;
+  }
 
-    /* When the menu is opened, move it to the right */
-    .nav-menu.open {
-        right: 300;
-    }
+  /* When the menu is opened, move it to the right */
+  .nav-menu.open {
+    right: 300;
+  }
 }
 
 /* Optional: For even smaller devices */
 @media (max-width: 480px) {
-    .nav-menu li {
-        font-size: 22px;
-    }
+  .nav-menu li {
+    font-size: 22px;
+  }
 
-    .port-logo {
-        font-size: 20px;
-    }
+  .port-logo {
+    font-size: 20px;
+  }
 
-    .nav-connect {
-        font-size: 18px;
-    }
+  .nav-connect {
+    font-size: 18px;
+  }
 }
